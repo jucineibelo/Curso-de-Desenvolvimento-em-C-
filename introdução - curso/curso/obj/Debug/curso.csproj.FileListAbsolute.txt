@@ -1,0 +1,7 @@
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\curso\curso\bin\Debug\curso.exe.config
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\curso\curso\bin\Debug\curso.exe
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\curso\curso\bin\Debug\curso.pdb
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\curso\curso\obj\Debug\curso.csproj.AssemblyReference.cache
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\curso\curso\obj\Debug\curso.csproj.CoreCompileInputs.cache
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\curso\curso\obj\Debug\curso.exe
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\curso\curso\obj\Debug\curso.pdb

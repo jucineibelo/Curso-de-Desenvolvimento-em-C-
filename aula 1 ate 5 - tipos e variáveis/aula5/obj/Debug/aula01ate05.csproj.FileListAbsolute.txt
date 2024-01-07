@@ -1,0 +1,7 @@
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\aula5\aula5\bin\Debug\aula01ate05.exe.config
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\aula5\aula5\bin\Debug\aula01ate05.exe
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\aula5\aula5\bin\Debug\aula01ate05.pdb
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\aula5\aula5\obj\Debug\aula01ate05.csproj.AssemblyReference.cache
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\aula5\aula5\obj\Debug\aula01ate05.csproj.CoreCompileInputs.cache
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\aula5\aula5\obj\Debug\aula01ate05.exe
+C:\Users\User-J\Desktop\Curso C#\Curso\Aula 01\aula5\aula5\obj\Debug\aula01ate05.pdb

@@ -1,0 +1,7 @@
+C:\Users\User-J\Desktop\Curso C#\Curso\aula 8 - arrays\curso_array\curso_array\bin\Debug\curso_array.exe.config
+C:\Users\User-J\Desktop\Curso C#\Curso\aula 8 - arrays\curso_array\curso_array\bin\Debug\curso_array.exe
+C:\Users\User-J\Desktop\Curso C#\Curso\aula 8 - arrays\curso_array\curso_array\bin\Debug\curso_array.pdb
+C:\Users\User-J\Desktop\Curso C#\Curso\aula 8 - arrays\curso_array\curso_array\obj\Debug\curso_array.csproj.AssemblyReference.cache
+C:\Users\User-J\Desktop\Curso C#\Curso\aula 8 - arrays\curso_array\curso_array\obj\Debug\curso_array.csproj.CoreCompileInputs.cache
+C:\Users\User-J\Desktop\Curso C#\Curso\aula 8 - arrays\curso_array\curso_array\obj\Debug\curso_array.exe
+C:\Users\User-J\Desktop\Curso C#\Curso\aula 8 - arrays\curso_array\curso_array\obj\Debug\curso_array.pdb
