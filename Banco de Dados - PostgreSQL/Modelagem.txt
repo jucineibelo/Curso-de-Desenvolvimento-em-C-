@@ -1,0 +1,7 @@
+Controle Financeiro
+Controle de contas a pagar e contas a receber
+Contas que vamos pagar pagar a alguem, ou vamos receber de alguem 
+Alguem sempre é uma pessoa(fisica cpf ou juridica com cnpj)
+
+PESSOA - CONTAS A PAGAR - CONTAS A RECEBER
+
