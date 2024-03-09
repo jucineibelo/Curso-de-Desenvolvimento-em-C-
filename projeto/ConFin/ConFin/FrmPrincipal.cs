@@ -1,5 +1,6 @@
 ﻿using ConFin.Controller;
 using ConFin.Model;
+using ConFin.View;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -29,20 +30,20 @@ namespace ConFin
 
         private void btnListar_Click(object sender, EventArgs e)
         {
-            List<Pessoa> lista =  PessoaDB.getPessoa(conexao);
+            List<Conta> lista =  ContaDB.getContas(conexao);
             richTextBox1.Clear();
 
             for (int i = 0; i < lista.Count; i++)
             {
-                Pessoa pessoa = lista[i];
-                richTextBox1.AppendText("Pessoa: " + pessoa.pessoa_id + " - " + pessoa.nome + " - " + pessoa.endereco + "\n");
+                Conta conta = lista[i];
+                richTextBox1.AppendText("Conta: " + conta.conta_id + " - " + conta.descricao + " - " + conta.situacao + "\n");
             }
         }
 
         private void btnIncluir_Click(object sender, EventArgs e)
         {
-            Pessoa pessoa = new Pessoa("Daia", "123", "Rua Armando Marinho", "São Jorge", "99812356", "daia@example.com", "0", 1);
-            bool realizou = PessoaDB.setIncluiPessoa(conexao, pessoa);
+            Conta conta = new Conta("Gás", 10.20, DateTime.Now.AddDays(10), 0, DateTime.Now.AddDays(30), 0, 2 );
+            bool realizou = ContaDB.setIncluiConta(conexao, conta);
             
             if (realizou)
             {
@@ -55,8 +56,8 @@ namespace ConFin
 
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            Pessoa pessoa = new Pessoa(5, "Dayane", "123", "Rua Armando Marinho", "São Jorge", "99812356", "daia@example.com", "0", 1);
-            bool realizou = PessoaDB.setAlteraPessoa(conexao, pessoa);
+            Conta conta = new Conta(3, "Manutenção", 150.80, DateTime.Now.AddDays(10), 0, DateTime.Now.AddDays(30), 0, 2);
+            bool realizou = ContaDB.setAlteraConta(conexao, conta);
 
             if (realizou)
             {
@@ -70,7 +71,7 @@ namespace ConFin
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            bool realizou = PessoaDB.setExcluiPessoa(conexao, 7);
+            bool realizou = ContaDB.setExcluiConta(conexao, 7);
 
             if (realizou)
             {
@@ -80,6 +81,35 @@ namespace ConFin
             {
                 MessageBox.Show("Erro ao excluir!");
             }
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void estadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEstado form = new FrmEstado(conexao);
+            form.ShowDialog();
+        }
+
+        private void cidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmCidade form = new FrmCidade(conexao);
+            form.ShowDialog();
+        }
+
+        private void pessoaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPessoa form = new FrmPessoa(conexao);
+            form.ShowDialog();
+        }
+
+        private void contaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmConta form = new FrmConta(conexao);
+            form.ShowDialog();
         }
     }
 }

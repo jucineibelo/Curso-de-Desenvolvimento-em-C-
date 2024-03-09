@@ -31,7 +31,7 @@ namespace ConFin.Controller
                     string bairro = (rd["bairro"].ToString());
                     string telefone = (rd["telefone"].ToString());
                     string email = (rd["email"].ToString());
-                    string tipo = (rd["tipo"].ToString());
+                    int tipo = int.Parse(rd["tipo"].ToString());
                     int cidade_id = int.TryParse(rd["cidade_id"].ToString(), out int parsedValue) ? parsedValue : 0;
                     Pessoa pessoa = new Pessoa(pessoa_id, nome, cpfcnpj, endereco, bairro, telefone, email, tipo, cidade_id);
                     lista.Add(pessoa);
@@ -60,7 +60,7 @@ namespace ConFin.Controller
                 cmd.Parameters.Add("bairro", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.bairro;
                 cmd.Parameters.Add("telefone", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.telefone;
                 cmd.Parameters.Add("email", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.email;
-                cmd.Parameters.Add("tipo", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.tipo;
+                cmd.Parameters.Add("tipo", NpgsqlTypes.NpgsqlDbType.Integer).Value = pessoa.tipo;
                 cmd.Parameters.Add("cidade_id", NpgsqlTypes.NpgsqlDbType.Integer).Value = pessoa.cidade_id;
                 int valor = cmd.ExecuteNonQuery();
 
@@ -91,7 +91,7 @@ namespace ConFin.Controller
                 cmd.Parameters.Add("bairro", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.bairro;
                 cmd.Parameters.Add("telefone", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.telefone;
                 cmd.Parameters.Add("email", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.email;
-                cmd.Parameters.Add("tipo", NpgsqlTypes.NpgsqlDbType.Varchar).Value = pessoa.tipo;
+                cmd.Parameters.Add("tipo", NpgsqlTypes.NpgsqlDbType.Integer).Value = pessoa.tipo;
                 cmd.Parameters.Add("cidade_id", NpgsqlTypes.NpgsqlDbType.Integer).Value = pessoa.cidade_id;
                 cmd.Parameters.Add("pessoa_id", NpgsqlTypes.NpgsqlDbType.Integer).Value = pessoa.pessoa_id;
 

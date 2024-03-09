@@ -15,10 +15,10 @@ namespace ConFin.Model
         public string bairro { get; set; }
         public string telefone { get; set; }
         public string email { get; set; }
-        public string tipo { get; set; }
+        public int tipo { get; set; }
         public int cidade_id { get; set; }
 
-        public Pessoa(int pessoa_id, string nome, string cpfcnpj, string endereco, string bairro, string telefone, string email, string tipo, int cidade_id)
+        public Pessoa(int pessoa_id, string nome, string cpfcnpj, string endereco, string bairro, string telefone, string email, int tipo, int cidade_id)
         {
             this.pessoa_id = pessoa_id;
             this.nome = nome;
@@ -30,7 +30,7 @@ namespace ConFin.Model
             this.tipo = tipo;
             this.cidade_id = cidade_id;
         }
-        public Pessoa( string nome, string cpfcnpj, string endereco, string bairro, string telefone, string email, string tipo, int cidade_id)
+        public Pessoa(string nome, string cpfcnpj, string endereco, string bairro, string telefone, string email, int tipo, int cidade_id)
         {
             this.nome = nome;
             this.cpfcnpj = cpfcnpj;
@@ -40,6 +40,12 @@ namespace ConFin.Model
             this.email = email;
             this.tipo = tipo;
             this.cidade_id = cidade_id;
+        }
+
+        override
+        public string ToString()
+        {
+            return this.pessoa_id + " - " + this.nome;
         }
     }
 }

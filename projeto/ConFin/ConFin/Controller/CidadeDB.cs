@@ -44,7 +44,7 @@ namespace ConFin.Controller
 
             try
             {
-                string sql = "INSERT INTO cidade (cidade_id, nome, estado_id) VALUES(@cidade_id, @nome, @estado_id)";
+                string sql = "INSERT INTO cidade (nome, estado_id) VALUES(@nome, @estado_id)";
                 NpgsqlCommand cmd = new NpgsqlCommand( sql, conexao);
                 cmd.Parameters.Add("nome", NpgsqlTypes.NpgsqlDbType.Varchar).Value = cidade.nome;
                 cmd.Parameters.Add("estado_id", NpgsqlTypes.NpgsqlDbType.Integer).Value = cidade.estado_id;

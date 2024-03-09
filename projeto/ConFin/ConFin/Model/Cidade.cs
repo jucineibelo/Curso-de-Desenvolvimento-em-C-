@@ -27,5 +27,11 @@ namespace ConFin.Model
             this.estado_id = estado_id;
         }
 
+        override
+        public String ToString()
+        {
+            return this.cidade_id + " - " + this.nome;
+        }
+
     }
 }

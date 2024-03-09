@@ -19,11 +19,16 @@ namespace ConFin.Model
             this.uf = uf;
             this.nome = nome;  //quando um parametro está com o this é porque vem das variaveis e parametro sem this é do escopo do construtor
         }
-
         public Estado(string uf, string nome)
         {
             this.uf = uf;
             this.nome = nome;  
+        }
+
+        override
+        public String ToString()
+        {
+            return this.uf + " - " + this.nome;
         }
 
     }
