@@ -111,5 +111,29 @@ namespace ConFin
             FrmConta form = new FrmConta(conexao);
             form.ShowDialog();
         }
+
+        private void estadoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmRelEstado form = new FrmRelEstado(conexao);
+            form.ShowDialog();
+        }
+
+        private void cidadeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmRelCidade form = new FrmRelCidade(conexao);
+            form.ShowDialog();
+        }
+
+        private void pessoaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmRelPessoa form = new FrmRelPessoa(conexao);
+            form.ShowDialog();
+        }
+
+        private void contaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmRelConta form = new FrmRelConta(conexao);
+            form.ShowDialog();
+        }
     }
 }

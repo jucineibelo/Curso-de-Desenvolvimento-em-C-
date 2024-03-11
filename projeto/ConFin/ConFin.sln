@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConFin", "ConFin\ConFin.csproj", "{F98C52B4-CCE1-4925-8646-789A2B59B9E8}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupConfin", "SetupConfin\SetupConfin.vdproj", "{26EBDAA3-B8C3-4CE4-89A3-C7452A6C2272}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{F98C52B4-CCE1-4925-8646-789A2B59B9E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F98C52B4-CCE1-4925-8646-789A2B59B9E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F98C52B4-CCE1-4925-8646-789A2B59B9E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26EBDAA3-B8C3-4CE4-89A3-C7452A6C2272}.Debug|Any CPU.ActiveCfg = Debug
+		{26EBDAA3-B8C3-4CE4-89A3-C7452A6C2272}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

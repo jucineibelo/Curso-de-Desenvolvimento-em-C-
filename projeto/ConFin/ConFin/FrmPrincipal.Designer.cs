@@ -141,28 +141,28 @@
             // cidadeToolStripMenuItem
             // 
             this.cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
-            this.cidadeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cidadeToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.cidadeToolStripMenuItem.Text = "Cidade";
             this.cidadeToolStripMenuItem.Click += new System.EventHandler(this.cidadeToolStripMenuItem_Click);
             // 
             // contaToolStripMenuItem
             // 
             this.contaToolStripMenuItem.Name = "contaToolStripMenuItem";
-            this.contaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contaToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.contaToolStripMenuItem.Text = "Conta";
             this.contaToolStripMenuItem.Click += new System.EventHandler(this.contaToolStripMenuItem_Click);
             // 
             // estadoToolStripMenuItem
             // 
             this.estadoToolStripMenuItem.Name = "estadoToolStripMenuItem";
-            this.estadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estadoToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.estadoToolStripMenuItem.Text = "Estado";
             this.estadoToolStripMenuItem.Click += new System.EventHandler(this.estadoToolStripMenuItem_Click);
             // 
             // pessoaToolStripMenuItem
             // 
             this.pessoaToolStripMenuItem.Name = "pessoaToolStripMenuItem";
-            this.pessoaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pessoaToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.pessoaToolStripMenuItem.Text = "Pessoa";
             this.pessoaToolStripMenuItem.Click += new System.EventHandler(this.pessoaToolStripMenuItem_Click);
             // 
@@ -180,26 +180,30 @@
             // cidadeToolStripMenuItem1
             // 
             this.cidadeToolStripMenuItem1.Name = "cidadeToolStripMenuItem1";
-            this.cidadeToolStripMenuItem1.Size = new System.Drawing.Size(111, 22);
+            this.cidadeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.cidadeToolStripMenuItem1.Text = "Cidade";
+            this.cidadeToolStripMenuItem1.Click += new System.EventHandler(this.cidadeToolStripMenuItem1_Click);
             // 
             // contaToolStripMenuItem1
             // 
             this.contaToolStripMenuItem1.Name = "contaToolStripMenuItem1";
-            this.contaToolStripMenuItem1.Size = new System.Drawing.Size(111, 22);
+            this.contaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.contaToolStripMenuItem1.Text = "Conta";
+            this.contaToolStripMenuItem1.Click += new System.EventHandler(this.contaToolStripMenuItem1_Click);
             // 
             // estadoToolStripMenuItem1
             // 
             this.estadoToolStripMenuItem1.Name = "estadoToolStripMenuItem1";
-            this.estadoToolStripMenuItem1.Size = new System.Drawing.Size(111, 22);
+            this.estadoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.estadoToolStripMenuItem1.Text = "Estado";
+            this.estadoToolStripMenuItem1.Click += new System.EventHandler(this.estadoToolStripMenuItem1_Click);
             // 
             // pessoaToolStripMenuItem1
             // 
             this.pessoaToolStripMenuItem1.Name = "pessoaToolStripMenuItem1";
-            this.pessoaToolStripMenuItem1.Size = new System.Drawing.Size(111, 22);
+            this.pessoaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.pessoaToolStripMenuItem1.Text = "Pessoa";
+            this.pessoaToolStripMenuItem1.Click += new System.EventHandler(this.pessoaToolStripMenuItem1_Click);
             // 
             // contextMenuStrip1
             // 

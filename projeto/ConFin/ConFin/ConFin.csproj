@@ -48,6 +48,24 @@
     <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.8.0.0\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Npgsql, Version=8.0.1.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>..\packages\Npgsql.8.0.1\lib\netstandard2.0\Npgsql.dll</HintPath>
     </Reference>
@@ -115,6 +133,7 @@
     <Compile Include="Model\Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="View\FrmConta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,9 +206,37 @@
     <Compile Include="View\FrmPessoaNovo.Designer.cs">
       <DependentUpon>FrmPessoaNovo.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FrmRelCidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmRelCidade.Designer.cs">
+      <DependentUpon>FrmRelCidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmRelConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmRelConta.Designer.cs">
+      <DependentUpon>FrmRelConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmRelEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmRelEstado.Designer.cs">
+      <DependentUpon>FrmRelEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmRelPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmRelPessoa.Designer.cs">
+      <DependentUpon>FrmRelPessoa.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Model\RelConta.rdlc" />
+    <EmbeddedResource Include="Model\RelPessoa.rdlc" />
+    <EmbeddedResource Include="Model\RelCidade.rdlc" />
+    <EmbeddedResource Include="Model\RelEstado.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -235,7 +282,23 @@
     <EmbeddedResource Include="View\FrmPessoaNovo.resx">
       <DependentUpon>FrmPessoaNovo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmRelCidade.resx">
+      <DependentUpon>FrmRelCidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmRelConta.resx">
+      <DependentUpon>FrmRelConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmRelEstado.resx">
+      <DependentUpon>FrmRelEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmRelPessoa.resx">
+      <DependentUpon>FrmRelPessoa.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\ConFin.Model.Cidade.datasource" />
+    <None Include="Properties\DataSources\ConFin.Model.Conta.datasource" />
+    <None Include="Properties\DataSources\ConFin.Model.Estado.datasource" />
+    <None Include="Properties\DataSources\ConFin.Model.Pessoa.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -252,6 +315,19 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="IconeFinanceiro.ico" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
